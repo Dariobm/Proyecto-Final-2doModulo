@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth; /*Formato de scroll en la pagina*/
+}
+
+body{
+    min-height: 100%;
+    max-width: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif; /*Estilo de letra*/
+    
+}
+
+h1{ font-size: 3.5em; /*Tamaños de letra*/
+    color: blue;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.2em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+/*Inicio de Estilos de header*/
+button{ 
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    color: white;
+    background-color: blue;
+}
+header{ 
+    background-color: rgba(36, 18, 18, 0.445);   
+    position: fixed;
+    width: 100%;
+}
+
+header .logo{ 
+    margin: 0;
+    padding: 5px 50px;
+    font-weight: bold;
+    font-size: 1.em;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-bottom: 0;
+    padding-right: 90px;
+    color: white;      
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: blue;
+}/*Final de Estilos de header*/
+
+    /*Inicio de Estilo de la primer pagina "lo mejor de lo mejor"*/
+.hero-t{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.418),
+        rgba(0,0,0,0.5))
+    ,url("media/local-pizzas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.hero-t h1{
+    color: white;
+}
+.hero-t button{
+    font-size: 1.75em;
+    text-decoration: none;
+}
+.hero h1{
+        font-size: 5em;
+    }/*Final de estilo de la primer pagina "lo mejor de lo mejor"*/
+
+
+       /*Inicio de estilo de Productos"*/
+.productos-1{ /*Estilos de fondo"*/
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 251, 251);
+    text-align: center;   
+    padding: 10px 70px 50px 60px;
+}
+.productos-1 p{
+    display: block;
+    margin-bottom: 30px;
+}
+.titulo { /*Estilos del titulo"*/
+    margin-top: 95px;
+    color: black;
+}
+.titulo h2{
+    display: inline-block;
+    font-size: 3.5em;
+}
+.productos-1 .carta{ /*Estilos de las cartas"*/
+    background-position: center center;
+    margin: 25px;
+    border-radius: 55px;
+    padding: 60px;
+    background-size: 100% 170px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+.productos-1 .familiar{
+    display: flex;
+    justify-content: center;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/imagen-pizza.png");
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/pizza.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/comida-rápida.jpg");
+}
+/*Final de estilos de Productos"*/
+
+
+/*Inicio de estilo de Nosotros"*/
+.main { 
+width: 100%;
+}
+
+#ilocal {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 120px 0px 0px 100px;
+    display:flex;
+}
+.i-local-1 {
+    width: 75%;
+    height: auto;
+    box-sizing: border-box;
+    display:inline-block;
+}
+#iaside {
+    width: 25%;
+    height: auto;
+    padding: none;
+}
+
+.i-container  {
+    text-align: left;
+    padding: 10px 10px 0px 100px;
+    justify-content: normal;
+    display:flex;
+    bottom: 180deg
+}
+.i-container .img-pizzas{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 5, 0)
+    )
+    ,url("media/foto.depizzas.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: 0px 50px 10px 0px;;
+    height: 200px;
+    width: 300px; 
+}
+.i-container .texto{
+    width: 60%;
+    max-width: 350px;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} /* Final Estilo de somos Danisa bbq"*/
+
+
+.vision-1 { /* inicio Estilo de Vision"*/
+    text-align: left;
+    padding: 10px 10px 10px 100px;
+    justify-content: normal;
+    display:flex;
+    bottom: 180deg
+}
+.vision-1 .img-pizzas-1{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 5, 0)
+    )
+    ,url("media/ruedas-pizza.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 100px 10px 0px;
+    height: 200px;
+    width: 300px; 
+}
+.vision-1 .texto{
+    width: 60%;
+    max-width: 350px;
+    padding: 0px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} /* Final Estilo de Vision"*/
+
+
+.mision-1 { /* inicio Estilo de Mision"*/
+    text-align: left;
+    padding: 10px 10px 10px 100px;
+    justify-content: normal;
+    display:flex;
+    bottom: 180deg
+}
+.mision-1 .img-pizzas-2 {
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 5, 0)
+    )
+    ,url("media/pizza-partida.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 70px 0px 0px;
+    height: 200px;
+    width: 300px; 
+}
+.mision-1 .texto {
+    width: 60%;
+    max-width: 350px;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }/* Final Estilo de Mision"*/
+
+/*Color titulos de vision y mision*/
+.color-acento{ color:rgb(0, 81, 255); 
+}
+
+/*Final de estilo de Nosotros"*/
+
+/* inicio Estilo de aside"*/
+.aside .img-aside-1{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 5, 0)
+    )
+    ,url("media/pizzeria-belluci.jpeg");
+    background-size: cover;
+    background-position: center center;
+    margin: 0px 0px 10px 0px;
+    height: 200px;
+    width: 250px;
+    
+}
+.aside .texto-1 {
+    font-size: 14px;
+    padding: 10px 0px 15px 0px;
+}
+.aside .img-aside-2{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 5, 0)
+    )
+    ,url("media/pizza-champions.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: 0px 10px 10px 0px;
+    height: 200px;
+    width: 250px;
+}
+
+.aside .texto-2 {
+    font-size: 14px;
+    padding: 10px 0px 15px 0px;
+}
+.aside .img-aside-3{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 5, 0)
+    )
+    ,url("media/fasfu.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: 0px 0px 10px 0px;
+    height: 200px;
+    width: 250px;
+}
+.aside .texto-3 {
+    font-size: 14px;
+    padding: 10px 0px 15px 0px;
+}
+ /*Final Estilo de aside"*/
+
+ /*Inicio Estilo parte final"*/
+.final h2{
+        font-size: 5em;
+    }
+
+.final button{
+        font-size: 2em;
+    }
+
+
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(17, 19, 19);
+    color: white;
+    height: 80vh;
+}
+.final h2{
+    font-size: 4vw;
+}
+.final button{
+    font-size: 5vw;
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 10px;
+    height: 70px;
+    color: rgb(100,100,100);
+}
+footer .logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ 
+
+

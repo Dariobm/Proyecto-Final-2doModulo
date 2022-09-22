@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANISA BBQ</title>
+    <link rel="stylesheet" href="registro.css">
+    <link rel="shortcut icon" href="media/logodanisa.png" type="image/x-icon" />
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">
+                <a href="#local-pizzas"> <img src="media/logodanisa.png" width="150" height="100" alt="Este es mi logo"></a>
+                <h1>DANISA BBQ</h1>
+            </p>
+            <nav class="navs">
+                <a href="index.html">Nosotros</a>
+                <a href="index.html">Productos</a>
+                <a href="index.html">Inicio</a>           
+            </nav>
+        </div>
+        <body>
+        </header>
+        <main>
+            <section id="hero" class="hero-t">
+            <h1>Lo Mejor <br>De Lo Mejor</h1><br>
+            <a href="#contenedor-3primeros"><button class="domicilio">Registrate</button></a>
+        </section>
+        <form id="NewUser" action="index.html">
+            <fieldset>
+               <legend> <h1>Nuevo Usuario</h1> </legend>
+                <div id="contenedor-3primeros">
+                    <br>
+                   <label for="iname">Nombre: </label>
+                   <input id="iname" type="text"text name="name" required><br><br>
+    
+                   <label for="iusername"> Apellidos: </label>
+                   <input id="iusername" type="text"text name="username" required><br><br>
+    
+                   <label for="icity">Ciudad:</label>
+                   <input list="icity"> <datalist id="icity"> <option>Bogota</option> <option>cali</option> <option>Barranquilla</option><option>Armenia</option></datalist><br><br>
+                  
+                 </label>
+                </div>
+                   <div id="contenedor-genero">
+                    <p>Genero:</p><br>
+                    <label class="radio" for="radio"><input id="radio" type="radio"> masculino</label><br><br>
+                    <label class="radio" for="radio"><input id="radio" type="radio"> femenino</label><br>
+                 </div>
+    
+                   <label for="iemail"> Correo: </label>
+                   <input id="iemail" type="email"text name="email" required>
+    
+                   <label for="date"> Fecha de nacimiento :  </label>
+                   <input id="idate" type="date"text name="date" ><br><br>
+    
+                   <label for="ipassword" >Contraseña:</label>
+                   <input id="ipassword" type="password" text name="password" required>
+    
+                   <label for="iphone">Telefono: </label>
+                   <input id="iphone" type="number" text name="iphone" required> <br><br>
+    
+                  <p>¿Que sabores de pizza le gusta?</p> <br>
+                  <div id="intereses">
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Vegetariana</label>
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Carnes</label>
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Hawaina</label><br><br>
+    
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Champiñones</label>
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Criolla</label>
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Estofada</label><br><br>
+    
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Colombianita</label>
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Salami</label>
+                    <label class="checkbox" for="interes"><input id="checkbox" type="checkbox"> Queso</label><br><br>
+                  </div>
+    
+                  <label for="imensaje">Mensaje:</label><br>
+                  <textarea name="mensaje" id="mensaje" rows="2" class="input-padron" required></textarea><br><br>
+    
+                  <label class="checkbox" form="terminos"><input id="checkbox" type="checkbox" required>Acepto terminos y condiciones </label><br><br>
+    
+                  <input type="submit" value="Enviar" id="boton"><br><br>
+            </fieldset><br><br>
+    
+        </form>      
+            
+        </main>
+        <footer class="footer">
+            
+          <figure class="logo">
+            <a href="#local-pizzas"> <img src="media/logodanisa.png" width="200" height="150" alt="Este es mi logo"></a>
+          </figure>
+            <div class="contacto">
+                <p> DANISA BBQ <br>+57 3232148350</p>
+               
+                <nav class="navegacion">
+                    <a href="#nuestros-productos">Productos</a>
+                    <a href="#ilocal" >Nosotros</a>
+                    <a href="registro.html">Registro</a>          
+                </nav>
+            </div>
+        </footer>
+        </body>
+    </header>
